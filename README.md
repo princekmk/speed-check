@@ -11,15 +11,26 @@
 
 ## Запуск
 
-Откройте терминал в папке проекта и выполните команду:
+1. Откройте Windows PowerShell.
+2. Перейдите в папку проекта:
 
-    python main.py https://example.com
+   ```powershell
+   cd "$HOME\Desktop\speed-check"
+   ```
 
-Вместо https://example.com укажите адрес ресурса, данные которого необходимо скачать.
+3. Запустите программу, указав URL файла:
 
-Пример:
+   ```powershell
+   python main.py "https://speed.cloudflare.com/__down?bytes=10000000"
+   ```
 
-    python main.py "https://speed.cloudflare.com/__down?bytes=10000000"
+Вместо указанного адреса можно использовать URL другого файла, доступного по HTTP или HTTPS.
+
+Для просмотра доступных параметров выполните:
+
+```powershell
+python main.py --help
+```
 
 ## Возможности
 
